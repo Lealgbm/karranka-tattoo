@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karranka Tattoos</title>
+  <title>Início - Karranka Tattoos</title>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
     text {
-      font-size: 120px;
+      font-size: 100px;
       font-family: 'Lobster', sans-serif;
       fill: url(#grad1);
       stroke: #ff0000;
@@ -23,6 +30,94 @@
       to {
         stroke-dashoffset: 0;
       }
+    }
+
+    nav {
+      background-color: #000;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff0000;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .botao-chamativo {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #ff0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .botao-chamativo:hover {
+      background-color: #cc0000;
+    }
+
+    .animacao-fade {
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .galeria-inicio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .galeria-inicio img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .galeria-inicio img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff0000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: white;
     }
   </style>
 </head>
@@ -43,25 +138,23 @@
   </header>
 
   <nav>
-    <a href="#">Início</a>
+    <a href="index.html" class="active">Início</a>
     <a href="sobre.html">Sobre</a>
     <a href="galeria.html">Galeria</a>
     <a href="contato.html">Contato</a>
   </nav>
 
-  <div class="container">
-    <div class="coluna">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh97Wy3Tk4qAUkgCBfRHNSnpDfeio43RKaA&s" alt="Tatuagem Black">
-      <h2>Bem-vindo ao Estúdio Karranka</h2>
-      <p>Arte na pele com identidade e atitude. Somos especialistas em tatuagens black, com traços fortes e estilos marcantes.</p>
-    </div>
+  <section class="hero animacao-fade">
+    <h2>Arte na pele, história na alma.</h2>
+    <p>Transformamos ideias em tatuagens únicas com estilo, técnica e paixão. Conheça mais sobre nosso trabalho.</p>
+    <a href="galeria.html" class="botao-chamativo">Ver Galeria</a>
+  </section>
 
-    <div class="coluna">
-      <img src="https://media-for2-1.cdn.whatsapp.net/v/t61.24694-24/473409747_1663166161074961_4528400900736476134_n.jpg?ccb=11-4&oh=01_Q5Aa1gFYVaDLtGCLT1JU8LpywXcwDOdsYxm1Ocv8yJ7I-895wg&oe=683E48C6&_nc_sid=5e03e0&_nc_cat=109" alt="Arte de tatuagem">
-      <h2>Estilo Autêntico</h2>
-      <p>Cada tatuagem é pensada para expressar sua essência. Acreditamos que a pele é uma tela viva para contar sua história.</p>
-    </div>
-  </div>
+  <section class="galeria-inicio">
+    <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/476210931_946204964384185_8973550280165426714_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=v4qp77vYNwAQ7kNvwF35jey&_nc_oc=AdmdNTaHoSdu-k1eBIfU2rZu2QPHir6r2M5Y0TSDX-2FFStmPwXCOW7x2Zw973RsI3c&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=I4LuZJxXMkqPNOtIWldIlw&oh=00_AfLWjksWQijutMliAgcUIUJQF8A-3INwVic7leWazdlTaw&oe=68372C7B" alt="Tatuagem 1">
+    <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/476030735_944085227929492_9028923721902960345_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=XptvRunV6P4Q7kNvwEgjyRo&_nc_oc=AdmWsfZrU69RprFLYn9NNj54wDAWZm5xLpU7sWqFS2c70jHWtNYggRRBgTzbH2c07tw&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=qXxwR6Z2KHNBuULWjq4SXw&oh=00_AfIy-CkErlBMvfL6po9GWXFHr7584ubtn2E9JPL1cdwS3g&oe=68371CC0" alt="Tatuagem 2">
+    <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t1.6435-9/200559723_105655621772461_1825511061279936810_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=k2kLKSRxGGcQ7kNvwG9NKvV&_nc_oc=Adkfi0Qn8IIE1D0an27S3vQiJP8jYCvgL_bEHFv_6LjiP5C5hqzE2JN3ZoK9BWqSmE4&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=V_e11nhw6sbpBWn3cjmFKA&oh=00_AfIaMv7FfVRnFDWf_tf2u3x1X672Ses5jgYTWREHtcvMxA&oe=6858E195" alt="Tatuagem 3">
+  </section>
 
   <footer>
     &copy; 2025 Karranka Tattoos. Todos os direitos reservados.
