@@ -14,7 +14,6 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Cabeçalho SVG */
     text {
       font-size: 100px;
       font-family: 'Lobster', sans-serif;
@@ -33,7 +32,6 @@
       }
     }
 
-    /* Navegação */
     nav {
       background-color: #000;
       text-align: center;
@@ -61,7 +59,6 @@
       border-color: #ff0000;
     }
 
-    /* Container das colunas */
     .container {
       max-width: 1100px;
       margin: 40px auto;
@@ -72,7 +69,6 @@
       justify-content: center;
     }
 
-    /* Cada coluna de imagem */
     .coluna {
       background: #222;
       border: 2px solid #fff;
@@ -107,7 +103,6 @@
       color: #eee;
     }
 
-    /* Rodapé */
     footer {
       text-align: center;
       padding: 20px 0;
@@ -119,7 +114,6 @@
       margin-top: 50px;
     }
 
-    /* Responsivo */
     @media (max-width: 960px) {
       .container {
         justify-content: center;
@@ -127,6 +121,12 @@
       .coluna {
         width: 90%;
         max-width: 400px;
+      }
+    }
+
+    @media (min-width: 961px) {
+      .coluna {
+        flex: 0 0 calc(33.333% - 30px);
       }
     }
   </style>
@@ -155,21 +155,75 @@
   </nav>
 
   <div class="container">
+    
     <div class="coluna">
-      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/476210931_946204964384185_8973550280165426714_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=v4qp77vYNwAQ7kNvwF35jey&_nc_oc=AdmdNTaHoSdu-k1eBIfU2rZu2QPHir6r2M5Y0TSDX-2FFStmPwXCOW7x2Zw973RsI3c&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=I4LuZJxXMkqPNOtIWldIlw&oh=00_AfLWjksWQijutMliAgcUIUJQF8A-3INwVic7leWazdlTaw&oe=68372C7B" alt="Tatuagem 1" />
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/480947876_672917218396858_8903639706742142830_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rxd_oC0B-UgQ7kNvwH3uOLt&_nc_oc=AdlDVWxFRo-jtL-j0vYE1lGemI2o1-8n_nJ6zZSM32mNP4mZeAxG0PkfusZAaCX2lXg&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=rP1qs2hCYesaK6IAVqjXZg&oh=00_AfLLoA1V_oFcK33aGcwZAQcL4IOdI2Xjp81xRtCVwJNsYQ&oe=6837B800" alt="Tatuagem 1" />
       <h3>Tatuagem Tribal</h3>
       <p>Design marcante com traços fortes e simétricos.</p>
     </div>
     <div class="coluna">
-      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/481906194_672916958396884_8846132690937875322_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IPVOWmydfwEQ7kNvwF3ij57&_nc_oc=Adl3ZeWDNmCIsFcdvj6K81yNzIWlBrOh86E6R0Gyg84tkuJr_WK-AoZjUmBq7Kgzajg&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=EVZ4dnBwPlgmy-lSV6laiQ&oh=00_AfIYx6H2WE74wLh6p92rzxSe60r7k3uZc0yYp9y1ht6Uow&oe=68371149" alt="Tatuagem 2" />
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/481009958_672917215063525_7458462734406610205_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gR5xK_ykQfsQ7kNvwEvynUo&_nc_oc=AdkPDr-h3VeL56vLnDrxmjUpbz7wsz1MZyW4xX6GsINs5fykQz_YzVoVJ4BCbM8ig2I&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=rP1qs2hCYesaK6IAVqjXZg&oh=00_AfJgMnC6wV_NLUx6Btx0sa1YBFCdS-5obe_UXjOFKHNAQg&oe=6837BD91" alt="Tatuagem 2" />
       <h3>Arte Sombria</h3>
       <p>Um estilo único com muita personalidade.</p>
     </div>
     <div class="coluna">
-      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/476030735_944085227929492_9028923721902960345_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=XptvRunV6P4Q7kNvwEgjyRo&_nc_oc=AdmWsfZrU69RprFLYn9NNj54wDAWZm5xLpU7sWqFS2c70jHWtNYggRRBgTzbH2c07tw&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=qXxwR6Z2KHNBuULWjq4SXw&oh=00_AfIy-CkErlBMvfL6po9GWXFHr7584ubtn2E9JPL1cdwS3g&oe=68371CC0" alt="Tatuagem 3" />
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/481906194_672916958396884_8846132690937875322_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=IPVOWmydfwEQ7kNvwF3ij57&_nc_oc=Adl3ZeWDNmCIsFcdvj6K81yNzIWlBrOh86E6R0Gyg84tkuJr_WK-AoZjUmBq7Kgzajg&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=FSQZ7FHlAa8BcxylzNA5_w&oh=00_AfLzzTK1DBqriKD0-j3RNpQuth-cX3xiF3GPqymIXiQlWQ&oe=6837BA09" alt="Tatuagem 3" />
       <h3>Detalhes Finos</h3>
-      <p>Os animais geram um fascínio nas pessoas, essa águia tem todo significado com o relógio de fundo.</p>
+      <p>Águia imponente com fundo de relógio simbólico.</p>
+    </div>
+
+    
+    <div class="coluna">
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/476210931_946204964384185_8973550280165426714_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=v4qp77vYNwAQ7kNvwF35jey&_nc_oc=AdmdNTaHoSdu-k1eBIfU2rZu2QPHir6r2M5Y0TSDX-2FFStmPwXCOW7x2Zw973RsI3c&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=0X9nuXy8bDpZrNhpE-QJzA&oh=00_AfLu2Vj0mOTJO5oNeg3KbshvPr4WPDLarc8g8h4u7n0dxw&oe=68379CFB" alt="Tatuagem 4" />
+      <h3>Animal Realista</h3>
+      <p>Texturas incríveis com traços realistas de leão.</p>
     </div>
     <div class="coluna">
-      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/481009958_672917215063525_7458462734406610205_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=gR5xK_ykQfsQ7kNvwEvynUo&_nc_oc=AdkPDr-h3VeL56vLnDrxmjUpbz7wsz1MZyW4xX6GsINs5fykQz_YzVoVJ4BCbM8ig2I&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=v5hAZlOr0t5Jr_EIrApJDQ&oh=00_AfKY6YRDxSn6aajCrUTsSwM0-IAp2axBNn5c96jnwVkY_A&oe=683714D1" alt="Tatuagem 4" />
-      <h3>Animal Realista</
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/476030735_944085227929492_9028923721902960345_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=XptvRunV6P4Q7kNvwEgjyRo&_nc_oc=AdmWsfZrU69RprFLYn9NNj54wDAWZm5xLpU7sWqFS2c70jHWtNYggRRBgTzbH2c07tw&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=2Lnc7ihd2EZ68r9jECahbQ&oh=00_AfLLrzufGE2VcNz28ZKLxcIMqLMRxhVpPumYljRlKjk8iQ&oe=68378D40" alt="Tatuagem 5" />
+      <h3>Crânio Dark</h3>
+      <p>Crânio com flores sombrias, cheio de contraste.</p>
+    </div>
+    <div class="coluna">
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/468452558_895257542812261_819308614876197845_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=WFR1ow0nWhMQ7kNvwHO-asl&_nc_oc=AdlBixPdgrDGXzPlJ1xNxer4QAxkQ54NvxMAarcvQ9I5VWEt1HWZTsxQ5O6E-hZZNSA&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=NCnNs6q-F_PfypC3FEtIrQ&oh=00_AfKbbIJuF2uu-HACSHSE-930ExKuukqQrm0-rzseZSpl1g&oe=68378D9E" alt="Tatuagem 6" />
+      <h3>Rosto Feminino</h3>
+      <p>Olhar penetrante com sombras e expressão profunda.</p>
+    </div>
+
+    
+    <div class="coluna">
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t1.6435-9/200559723_105655621772461_1825511061279936810_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=k2kLKSRxGGcQ7kNvwG9NKvV&_nc_oc=Adkfi0Qn8IIE1D0an27S3vQiJP8jYCvgL_bEHFv_6LjiP5C5hqzE2JN3ZoK9BWqSmE4&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=c0ro71QaiIGmBcns8Q4Zbg&oh=00_AfIvapvMQwbIMoc65urMTsACz351k9MmzaKfSyX7fWta6g&oe=68595215" alt="Tatuagem 7" />
+      <h3>Relógio e Rosa</h3>
+      <p>Simbolismo do tempo com beleza e dor.</p>
+    </div>
+    <div class="coluna">
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/481662803_672917258396854_410067706120099190_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GeS_bb6o3dgQ7kNvwG4lWtU&_nc_oc=AdlJGsB4uQvrsIo-hUJVFKwXxGyHIo4FBVtJpDv3w0Tvm4JgakLKMPqBzQqWO7LyQss&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=A8gPlScXVcTS18KWQCDO7w&oh=00_AfKD3L6mkkDHFeNu72ojghsW0Tpod6JSnZi6FV-dStDwIg&oe=6837BA44" alt="Tatuagem 8" />
+      <h3>Máscara Samurai</h3>
+      <p>Força e proteção no estilo oriental realista.</p>
+    </div>
+    <div class="coluna">
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/482026385_672916961730217_7417840616813138488_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AHySewECVlcQ7kNvwEQkk3N&_nc_oc=AdnTb0qu4_ggArbGmeBD1WO87lrEgmNDqmYxYImSi5pMFNVknxVPyop7nz7mlio10-A&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=xdP6KiOUpUnvNjLkCwmIYw&oh=00_AfLZ0zNnPqtMU0GK10Jp-q_TAs-6GCYJESneTIe_gnS4mA&oe=683789A2" alt="Tatuagem 9" />
+      <h3>Caveira Tribal</h3>
+      <p>Estética tribal combinada com elementos místicos.</p>
+    </div>
+  </div>
+  
+<div class="container">
+  
+  <div class="coluna">
+    <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/481981876_672917211730192_8447346505623750381_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BuFmant4dgQQ7kNvwGDuWWb&_nc_oc=AdnI-SKG4Ed_zZ6WkyU6k1UEJG3-Yy2P1jtmNTvc5qvhSRFKulm9bsPq5XubwVrhtKo&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=1h4tjVro8wqmmOScmZ1GBg&oh=00_AfIZSqDs0tdrbA4Dt1GysZINS-qTTHEZOHKcpLy6-_3cgg&oe=6837A8D6" alt="Tatuagem 1" />
+    <h3>Tatuagem Tribal</h3>
+    <p>Design marcante com traços fortes e simétricos.</p>
+  </div>
+  <div class="coluna">
+    <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/481277624_672917208396859_3730178092216426996_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RhZzcMDEsEcQ7kNvwHg3vT8&_nc_oc=AdnUTal_0ynbXb6Tl19Nd4IP0ZcNCBmhv9Y4I-7i-67Xwu1aJR1SEvbgXe0b3Zddkcs&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=YhNZquNrQ0Oh5XmZBQdFcw&oh=00_AfKis8P-9BuUa-K4RjjYV1mhaEc2GQB6RuvUgz6FlXkGDQ&oe=68379859" alt="Tatuagem 2" />
+    <h3>Arte Sombria</h3>
+    <p>Um estilo único com muita personalidade.</p>
+  </div>
+  
+
+  <footer>
+    &copy; 2025 Karranka Tattoos. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
+/
