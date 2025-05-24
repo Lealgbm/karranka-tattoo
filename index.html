@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karranka Tattoos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    text {
+      font-size: 120px;
+      font-family: 'Lobster', sans-serif;
+      fill: url(#grad1);
+      stroke: #ff0000;
+      stroke-width: 3px;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: stroke-offset 5s forwards;
+      filter: drop-shadow(3px 3px 5px black);
+    }
+
+    @keyframes stroke-offset {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <svg viewBox="0 0 960 300">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ffffff; stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#ff0000; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#000000; stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em">KARRANKA</text>
+      </svg>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="container">
+    <div class="coluna">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh97Wy3Tk4qAUkgCBfRHNSnpDfeio43RKaA&s" alt="Tatuagem Black">
+      <h2>Bem-vindo ao Estúdio Karranka</h2>
+      <p>Arte na pele com identidade e atitude. Somos especialistas em tatuagens black, com traços fortes e estilos marcantes.</p>
+    </div>
+
+    <div class="coluna">
+      <img src="https://media-for2-1.cdn.whatsapp.net/v/t61.24694-24/473409747_1663166161074961_4528400900736476134_n.jpg?ccb=11-4&oh=01_Q5Aa1gFYVaDLtGCLT1JU8LpywXcwDOdsYxm1Ocv8yJ7I-895wg&oe=683E48C6&_nc_sid=5e03e0&_nc_cat=109" alt="Arte de tatuagem">
+      <h2>Estilo Autêntico</h2>
+      <p>Cada tatuagem é pensada para expressar sua essência. Acreditamos que a pele é uma tela viva para contar sua história.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Karranka Tattoos. Todos os direitos reservados.
+  </footer>
+</body>
+</html>

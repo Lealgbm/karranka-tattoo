@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Karranka Tattoos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    text {
+      font-size: 100px;
+      font-family: 'Lobster', sans-serif;
+      fill: url(#grad1);
+      stroke: #ff0000;
+      stroke-width: 3px;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: stroke-offset 5s forwards;
+      filter: drop-shadow(3px 3px 5px black);
+    }
+
+    @keyframes stroke-offset {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .contato-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .contato-info p, .contato-info a {
+      color: white;
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .contato-info a {
+      text-decoration: none;
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <svg viewBox="0 0 960 300">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ffffff; stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#ff0000; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#000000; stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em">KARRANKA</text>
+      </svg>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="contato-info">
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/karranka_ink" target="_blank">@karranka_ink</a></p>
+    <p><strong>Facebook:</strong> <a href="https://facebook.com/karrankaink" target="_blank">/karranka_ink</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/558198713-8104" target="_blank">+55 81 8713-8104</a></p>
+    <p><strong>Telefone:</strong> (99) 99999-9999</p>
+    <p><strong>Email:</strong> <a href="mailto:karranka.tattoo.ink@gmail.com">karranka.tattoo.ink@gmail.com</a></p>
+    <p><strong>Chave Pix:</strong> 05238937440</p>
+    <p><strong>Localização:</strong> <a href="https://www.google.com/maps/place/Rua Dr. Luiz Ribeiro Bastos, 80 - Poço da Panela Rua Dr. Luiz Ribeiro Bastos, 80 - Poço da Panela, Recife - PE, 52060-490" target="_blank">Ver no mapa</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Karranka Tattoos. Todos os direitos reservados.
+  </footer>
+</body>
+</html>

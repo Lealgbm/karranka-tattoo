@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - Karranka Tattoos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    text {
+      font-size: 120px;
+      font-family: 'Lobster', sans-serif;
+      fill: url(#grad1);
+      stroke: #ff0000;
+      stroke-width: 3px;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: stroke-offset 5s forwards;
+      filter: drop-shadow(3px 3px 5px black);
+    }
+
+    @keyframes stroke-offset {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <svg viewBox="0 0 960 300">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ffffff; stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#ff0000; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#000000; stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em">KARRANKA</text>
+      </svg>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="#">Sobre</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="container">
+    <div class="coluna">
+      <h2>Sobre Pablo Colares (Karranka)</h2>
+      <p>Tatuador premiado, especialista em Blackwork (trabalho em preto), possui estúdio privado em Recife-PE com atendimento personalizado agendado e artes autorais exclusivas.
+
+</p>
+    </div>
+
+    <div class="coluna">
+      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/497903495_3900997550212497_391205647322183278_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=FbWBl7Tx5xIQ7kNvwGXFz9F&_nc_oc=AdnC8K5DC7BIrN38Uaaa_ZXycdBziMFpBgOqdmAN_utjC7ZqFgN4LvO5XTQTLtRtfIo&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=QD76WhJ6dA23teZX2BmoLw&oh=00_AfLs-rXRITtOxatDQQdLzCNhN3pUBvcMa4-eqXN6RiRwmg&oe=68373FD4" alt="Imagem de Karranka tatuando">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Karranka Tattoos. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
