@@ -7,8 +7,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
     text {
-      font-size: 120px;
+      font-size: 100px;
       font-family: 'Lobster', sans-serif;
       fill: url(#grad1);
       stroke: #ff0000;
@@ -17,6 +24,7 @@
       stroke-dashoffset: 1000;
       animation: stroke-offset 5s forwards;
       filter: drop-shadow(3px 3px 5px black);
+      user-select: none;
     }
 
     @keyframes stroke-offset {
@@ -24,12 +32,84 @@
         stroke-dashoffset: 0;
       }
     }
+
+    nav {
+      background-color: #000;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ff0000;
+    }
+
+    .sobre-container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #1a1a1a;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #ff0000;
+      animation: fadeInUp 1.5s ease forwards;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .sobre-container h2 {
+      color: #ff0000;
+      margin-bottom: 20px;
+      font-family: 'Lobster', cursive;
+      font-size: 36px;
+      text-align: center;
+      user-select: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 60px;
+      user-select: none;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsividade */
+    @media (max-width: 640px) {
+      .sobre-container {
+        margin: 20px 15px;
+        padding: 20px 15px;
+        font-size: 1rem;
+      }
+      text {
+        font-size: 70px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrapper">
-      <svg viewBox="0 0 960 300">
+      <svg viewBox="0 0 960 300" role="img" aria-label="Logo Karranka Tattoos">
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" style="stop-color:#ffffff; stop-opacity:1" />
@@ -44,23 +124,25 @@
 
   <nav>
     <a href="index.html">Início</a>
-    <a href="#">Sobre</a>
+    <a href="sobre.html" class="active">Sobre</a>
     <a href="galeria.html">Galeria</a>
     <a href="contato.html">Contato</a>
   </nav>
 
-  <div class="container">
-    <div class="coluna">
-      <h2>Sobre Pablo Colares (Karranka)</h2>
-      <p>Tatuador premiado, especialista em Blackwork (trabalho em preto), possui estúdio privado em Recife-PE com atendimento personalizado agendado e artes autorais exclusivas.
-
-</p>
-    </div>
-
-    <div class="coluna">
-      <img src="https://scontent.frec35-1.fna.fbcdn.net/v/t39.30808-6/497903495_3900997550212497_391205647322183278_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_ohc=FbWBl7Tx5xIQ7kNvwGXFz9F&_nc_oc=AdnC8K5DC7BIrN38Uaaa_ZXycdBziMFpBgOqdmAN_utjC7ZqFgN4LvO5XTQTLtRtfIo&_nc_zt=23&_nc_ht=scontent.frec35-1.fna&_nc_gid=QD76WhJ6dA23teZX2BmoLw&oh=00_AfLs-rXRITtOxatDQQdLzCNhN3pUBvcMa4-eqXN6RiRwmg&oe=68373FD4" alt="Imagem de Karranka tatuando">
-    </div>
-  </div>
+  <section class="sobre-container" aria-label="Informações sobre a Karranka Tattoos">
+    <h2>Sobre a Karranka Tattoos</h2>
+    <p>
+     Tatuador premiado, especialista em Blackwork (trabalho em preto), possui estúdio privado em Recife-PE com atendimento personalizado agendado e artes autorais exclusivas.
+    <p>
+      Nosso estúdio preza por um ambiente acolhedor, seguro e profissional, onde cada cliente é tratado com atenção especial, garantindo conforto e satisfação do início ao fim do processo.
+    </p>
+    <p>
+      Utilizamos materiais de alta qualidade e seguimos todas as normas de higiene para proporcionar a melhor experiência e resultados duradouros.
+    </p>
+    <p>
+      Venha conhecer nosso trabalho e deixe a sua história marcada com a arte de Karranka!
+    </p>
+  </section>
 
   <footer>
     &copy; 2025 Karranka Tattoos. Todos os direitos reservados.
